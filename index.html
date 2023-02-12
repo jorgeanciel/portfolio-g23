@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <!--SECCION INICIO -->
+    <section id="inicio">
+                <div class="header">
+                   <header> 
+                    <div class="contenido-header">
+                    <h1>/LARC/</h1>
+                    <nav id="nav" class="">
+                       <ul id="links">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Home</a></li>
+                        <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">Acerca de mi</a></li>
+                        <li><a href="#skills" onclick="seleccionar(this)">Mis Habilidades</a></li>
+                        <li><a href="#portafolio" onclick="seleccionar(this)">Mi portafolio</a></li>
+                        <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                       </ul> 
+                    </nav>
+                    <!-- ICONO RESPONSIVO -->
+                    <div id="icono__nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                     </div>
+                    </div>
+                    </header>
+                </div>
+                   
+                  <div class="presentacion">
+                      <div class="datos">
+                        <h2>Soy</h2>
+                        <hr class="datos__hr1">
+                        <h1>Jorge Chirinos</h1>
+                        <hr class="datos__hr2">
+                        <p>Desarrollador Web</p>
+                        <p><span>3 años</span> de experiencia</p>
+                        <div class="iconos">
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </div>
+                      </div>
+                      <div class="foto">
+                            <img src="./assets/img/photo desktop.png" alt="">
+                            <div class="shape__vector"></div>                      
+
+                       </div>
+                       <div class="header__icons">
+                        <div class="header__icons__box">
+                           <div class="header__icons__rs">
+                               <i class="fa-brands fa-google"></i>
+                           </div>
+                           <div class="header__icons__rs">
+                               <i class="fa-brands fa-amazon"></i>
+                           </div>
+                           <div class="header__icons__rs">
+                               <i class="fa-brands fa-spotify"></i>
+                           </div>
+                         </div>
+                       </div>
+                 </div>
+    </section>
+
+    <!-- SECCION SOBREMI -->
+    <section id="sobremi">
+       <div class="main-contenedor">
+             <div class="main">
+                <h1 class="titulo">Acerca de mi </h1>
+               <p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero accusantium ab nemo dolor, amet adipisci! Consectetur veritatis et voluptatum nulla, voluptatibus enim eos ipsa impedit odit, tenetur fugit quisquam quibusdam!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolorum eaque enim explicabo aliquam maxime ipsa deleniti corrupti. Quasi nulla ipsam architecto eos voluptatum, consequuntur nemo beatae eveniet doloribus delectus.    
+            </p>
+             </div>
+            </div>
+             <div class="main_service" id="servicios">
+                <h1 class="titulo">Servicios</h1>
+                <div  class="service">
+                    <div class="service-iconos">
+                    <span><i class="fa-solid fa-pencil"></i></span>
+                    <h3>UX/UI DESIGN</h3>
+                    <p>Desde diseño hasta desarrollo</p>
+                    </div>
+                    <div class="service-iconos">
+                     <span><i class="fa-solid fa-bullhorn"></i></span>
+                    <h3>Marketing</h3>
+                    <p>Desde diseño hasta desarrollo</p>
+                    </div>
+                    <div class="service-iconos">
+                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <h3>Research</h3>
+                    <p>Desde diseño hasta desarrollo</p>
+                    </div>
+              </div>
+             </div>
+    </section>
+    <!-- SECCION HABLIDADES -->
+    <div id="skills" class="contenedor-skill"> 
+          <h1 class="titulo">Mis Hablidades</h1>
+          <div class="skill">
+              <div class="info">
+               <p><span class="lista">Html & Css</span></p>
+               <span class="porcentaje">90%</span>
+              </div>
+              <div class="barra">
+                  <div id="html" class=""></div>
+              </div>
+          </div>
+
+          <div class="skill">
+            <div class="info">
+             <p><span class="lista">Javascript</span></p>
+             <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+             <p><span class="lista">Base de Datos</span></p>
+             <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+       <h1 class="titulo">Mis Portafolios </h1>
+        <div class="fila">
+          <div class="proyecto">
+               <div class="overlay"></div>
+               <img src="./assets/img/ejemplo1.jpg" alt="">
+               <div class="infos">
+                <h4>Descripcion del Proyecto</h4>
+                <p>Diseño Web</p>
+               </div>
+          </div>
+
+          <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="./assets/img/ejemplo2.jpg" alt="">
+            <div class="infos">
+             <h4>Descripcion del Proyecto</h4>
+             <p>Diseño Web</p>
+            </div>
+       </div>
+
+       <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="./assets/img/ejemplo3.jpg" alt="">
+        <div class="infos">
+         <h4>Descripcion del Proyecto</h4>
+         <p>Diseño Web</p>
+        </div>
+   </div>
+       </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section class="" id="contacto">
+            <h1 class="titulo">Contacto</h1>
+            <div class="container__contacto">
+                <div class="container__contacto__box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="container__contacto__box__date">
+                           <h4>Numero celular</h4>
+                           <p>948305784</p>
+                    </div>
+                </div>
+                <div class="container__contacto__box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="container__contacto__box__date">
+                           <h4>Email</h4>
+                           <p>jorgeanciel@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- FOOTER -->  
+    <footer>
+        <p>Todos los derechos reservados 2022</p>
+        <div class="iconos__footer">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+      </footer>
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>
